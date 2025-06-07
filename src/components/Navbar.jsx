@@ -70,7 +70,7 @@ export default function Navbar() {
 
       {/* Dropdown Menu */}
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-56 bg-[#191c24] border rounded-md border-none">
+        <div className="absolute right-0 mt-2 w-56 bg-[#191c24] border rounded-md border-none z-50 shadow-lg">
           {/* Profile Text */}
           <div className="p-[16px] text-sm text-white font-semibold border-b border-gray-700">Profile</div>
 
