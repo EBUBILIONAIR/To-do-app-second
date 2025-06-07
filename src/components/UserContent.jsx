@@ -22,13 +22,14 @@ export default function UserContent() {
           Create User
         </button>
 
-        <div className="search mx-[-12px] mb-4">
-          <input
-            type="text"
-            className="bg-[#2A3038] text-white p-[10px_11px] w-full rounded"
-            placeholder="Search..."
-          />
-        </div>
+       <div className="search mb-2 w-64">
+  <input
+    type="text"
+    className="bg-[#2A3038] text-white px-3 py-2 w-full text-sm rounded"
+    placeholder="Search..."
+  />
+</div>
+
 
         <UserList onEditUser={(userId) => {
           setSelectedUserId(userId)

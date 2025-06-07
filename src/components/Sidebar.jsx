@@ -29,7 +29,7 @@ export default function Sidebar({ loadContent, activeSection }) {
        
         
         <div 
-          className={`dashboard pt-[12.8px] pr-[10px] pb-[12.8px] pl-[19.008px] flex items-center cursor-pointer sidebar-item ${activeSection === 'dashboard' ? 'active' : ''}`} 
+          className={`dashboard pt-[12.8px] pr-[10px] pb-[12.8px] pl-[19.008px] flex items-center hover:bg-[#060606] cursor-pointer sidebar-item ${activeSection === 'dashboard' ? 'active' : ''}`} 
           onClick={() => loadContent('dashboard')}
         >
           <div className="icon-container my-0 mr-2 ml-0">
@@ -39,7 +39,7 @@ export default function Sidebar({ loadContent, activeSection }) {
         </div>
         
         <div 
-          className={`project pt-[12.8px] pr-[10px] pb-[12.8px] pl-[19.008px] flex items-center cursor-pointer sidebar-item ${activeSection === 'project' ? 'active' : ''}`} 
+          className={`project pt-[12.8px] pr-[10px] pb-[12.8px] pl-[19.008px] flex items-center hover:bg-[#060606] cursor-pointer sidebar-item ${activeSection === 'project' ? 'active' : ''}`} 
           onClick={() => loadContent('project')}
         >
           <div className="icon-container mr-2">
@@ -49,7 +49,7 @@ export default function Sidebar({ loadContent, activeSection }) {
         </div>
         
         <div 
-          className={`task pt-[12.8px] pr-[10px] pb-[12.8px] pl-[19.008px] flex items-center cursor-pointer sidebar-item ${activeSection === 'task' ? 'active' : ''}`} 
+          className={`task pt-[12.8px] pr-[10px] pb-[12.8px] pl-[19.008px] flex items-center hover:bg-[#060606] cursor-pointer rounded-r-lg sidebar-item ${activeSection === 'task' ? 'active' : ''}`} 
           onClick={() => loadContent('task')}
         >
           <div className="icon-container mr-2">
@@ -58,15 +58,16 @@ export default function Sidebar({ loadContent, activeSection }) {
           <p className="m-0 text-gray-400">Task</p>
         </div>
         
-        <div 
-          className={`users pt-[12.8px] pr-[10px] pb-[12.8px] pl-[19.008px] flex items-center cursor-pointer sidebar-item ${activeSection === 'users' ? 'active' : ''}`} 
-          onClick={() => loadContent('users')}
-        >
-          <div className="icon-container my-0 mr-2 ml-0">
-            <img src="/icons/users.png" alt="Users" className="w-5 h-5" />
-          </div>
-          <p className="m-0 text-gray-400">Users</p>
-        </div>
+       <div 
+  className={`users pt-[12.8px] pr-[10px] pb-[12.8px] pl-[19.008px] flex items-center hover:bg-[#060606] cursor-pointer sidebar-item rounded-r-lg ${activeSection === 'users' ? 'active' : ''}`} 
+  onClick={() => loadContent('users')}
+>
+  <div className="icon-container my-0 mr-2 ml-0">
+    <img src="/icons/users.png" alt="Users" className="w-5 h-5" />
+  </div>
+  <p className="m-0 text-gray-400">Users</p>
+</div>
+
       </div>
     </div>
   )

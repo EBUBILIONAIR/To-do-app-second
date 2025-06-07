@@ -29,9 +29,10 @@ export default function Dashboard() {
                   <div className="digit px-3">
                     <h3 className="text-2xl font-bold">{count}</h3>
                   </div>
-                  <div className="icon px-3">
-                    <img src="/icons/left.png" alt="Icon" className="w-10 h-10" />
-                  </div>
+                 <div className="icon px-2">
+  <img src="/icons/left.png" alt="Icon" className="w-6 h-6" />
+</div>
+
                 </div>
                 <h6 className="mb-2 text-gray-400">{label}</h6>
               </div>
@@ -55,9 +56,10 @@ export default function Dashboard() {
           {projects?.map((project) => (
             <div key={project.id} className="project-updates py-4 border-t border-gray-700">
               <div className="flex items-center">
-                <div className="icon pl-4 bg-blue-700" style={{ lineHeight: '1' }}>
-                  <img src="/icons/file.png" alt="Icon" className="w-8 h-8" />
-                </div>
+               <div className="icon pl-4 bg-blue-700 flex items-center justify-center h-12 w-12 rounded">
+  <img src="/icons/file.png" alt="Icon" className="w-8 h-8 mr-3.5" />
+</div>
+
                 <div className="listing flex-1 px-4">
                   <h6 className="m-0 mb-2">{project.name}</h6>
                   <p className="m-0 text-gray-400">{project.description}</p>
