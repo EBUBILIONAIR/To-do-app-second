@@ -26,7 +26,7 @@ export default function ProjectSection() {
         <div className="relative mb-4">
           <button 
             onClick={() => setShowModal(true)} 
-            className="relative z-10 bg-[#0090e7] hover:bg-[#0080d0] text-white px-3 py-2 rounded transition-colors"
+            className="relative z-10 bg-[#0090e7] hover:bg-[#0080d0] text-white px-3 py-2 rounded transition-colors cursor-pointer"
           >
             Add Project
           </button>

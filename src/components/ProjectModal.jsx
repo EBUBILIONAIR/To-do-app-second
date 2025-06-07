@@ -67,7 +67,7 @@ export default function ProjectModal({ onClose, projectId }) {
               {/* First Row */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
-                  <label className="block mb-2 text-sm font-medium text-gray-300">Project Name</label>
+                  <label className="block mb-2 text-sm font-medium text-gray-300 ">Project Name</label>
                   <input 
                     type="text" 
                     name="name"

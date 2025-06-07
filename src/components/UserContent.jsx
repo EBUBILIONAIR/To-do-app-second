@@ -17,7 +17,7 @@ export default function UserContent() {
             setSelectedUserId(null)  // Clear any selected user
             setShowModal(true)
           }}
-          className="bg-[#0090e7] text-white px-3 py-2 rounded mb-4"
+          className="bg-[#0090e7] text-white px-3 py-2 rounded mb-4 cursor-pointer"
         >
           Create User
         </button>
